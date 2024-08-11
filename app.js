@@ -6,7 +6,7 @@ const directoryPath= 'C:/Users/claud/OneDrive/Desktop/Temas 1/';
 
 fs.readdir(directoryPath, (err,files)=>{
     var i=0;
-    var validateDirectory=err?console.log(err):add_numeric_order_to_playlist(files);
+    var validateDirectory=err?console.log(err):add_numeric_order_to_playlist_folder(files);
 });
 
 var order_music_by_numeric_order=(musicPlayList)=>{
@@ -22,7 +22,7 @@ var order_music_by_numeric_order=(musicPlayList)=>{
 }
 
 
-var add_numeric_order_to_playlist=(musicPlayList)=>{
+var add_numeric_order_to_playlist_folder=(musicPlayList)=>{
 
     var musicPlayListSorted=order_music_by_numeric_order(musicPlayList);
         
