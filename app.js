@@ -11,10 +11,10 @@ fs.readdir(directoryPath, (err,files)=>{
 
 var order_music_by_numeric_order=(musicPlayList)=>{
     const arrayMusic=musicPlayList.sort((a,b)=>{
-        const numA = parseInt(a.match(/\d+/)); 
-        const numB = parseInt(b.match(/\d+/)); 
+        const first_result = parseInt(a.match(/\d+/)); 
+        const second_result = parseInt(b.match(/\d+/)); 
         
-        return numA - numB;
+        return first_result - second_result;
 
     })
 
